@@ -38,7 +38,7 @@ Declaring a translatable ``Book`` model::
 
     class Book(TranslatableModel):
         author = models.ForeignKey(Author)
-        release = models.Date()
+        release = models.DateField()
 
         translations = TranslatedFields(
             title = models.CharField(max_length=250)
